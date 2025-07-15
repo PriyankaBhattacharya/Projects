@@ -7,16 +7,30 @@
   <link rel="stylesheet" href="yesstyle.css" />
 </head>
 <body>
+
   <!-- Floating Hearts -->
   <div class="hearts" id="heart-container"></div>
+
   <div class="container">
-    <center><img src="https://media.tenor.com/0JWcKoeZ3kkAAAAj/bubu-bubu-dudu.gif" alt="Cute Cat" class="cat-image" /></center>
-  <div class="hearts"></div>
+    <center>
+      <img src="https://media.tenor.com/0JWcKoeZ3kkAAAAj/bubu-bubu-dudu.gif" alt="Cute Cat" class="cat-image" />
+    </center>
+
     <h1 class="title"><center>Can I Be Yours?</center></h1>
-    <p class="message"><center><b>You’re the one who makes my heart skip a beat 💓</b> </center></p>
+    <p class="message"><center><b>You’re the one who makes my heart skip a beat 💓</b></center></p>
+
     <div class="buttons">
-      <a href="yes2.html"><button>Yes</button></a>
-      <a href="no.html"><button>No</button></a>
+      <!-- YES button sends email via formsubmit.co -->
+      <form action="https://formsubmit.co/bhattacharyapriyanka727@gmail.com" method="POST">
+        <input type="hidden" name="Crush_Response" value="They clicked YES 💖">
+        <input type="hidden" name="_subject" value="💌 THEY SAID YES!">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="yes2.html">
+        <button type="submit">Yes</button>
+      </form>
+
+      <!-- NO button redirects to no.html -->
+      <a href="no.html"><button type="button">No</button></a>
     </div>
   </div>
 
